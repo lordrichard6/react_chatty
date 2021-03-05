@@ -1,4 +1,4 @@
-const TheirMessage = (lastMessage, message) => {
+const TheirMessage = ({lastMessage, message}) => {
   const isFirstMessageByUser =
     !lastMessage || lastMessage.sender.username !== message.sender.username;
   return (
@@ -21,7 +21,7 @@ const TheirMessage = (lastMessage, message) => {
           className="message"
           style={{
             float: "left",
-            backgroundColor: "#CABCDC",
+            backgroundColor: "#838282",
             marginLeft: isFirstMessageByUser ? "4px" : "48px",
           }}
         >
