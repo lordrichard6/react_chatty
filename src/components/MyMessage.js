@@ -1,5 +1,3 @@
-import { getMessages } from "react-chat-engine";
-
 const MyMessage = ({ message }) => {
   if (message.attachments.length && message.attachments > 0) {
     return (
